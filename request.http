@@ -1,0 +1,27 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=WebStorm
+
+###
+### Register user
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "student@example.com",
+  "password": "mypassword123"
+}
+
+
+
+### Login user
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "student@example.com",
+  "password": "mypassword123"
+}
+### Get weather
+GET http://localhost:3000/weather?city=Riyadh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0dWRlbnRAZXhhbXBsZS5jb20iLCJpYXQiOjE3NzY2NzQxODEsImV4cCI6MTc3NjY3Nzc4MX0.EFrvlS0kc-X2K9aWTRQ6AFZ5tr1GbFi2VLTpNht5-jY
